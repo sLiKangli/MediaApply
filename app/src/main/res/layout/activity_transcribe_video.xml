@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-60dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bt_toggle"
+            android:onClick="onToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始/停止"/>
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"/>
+        <Button
+            android:id="@+id/bt_play"
+            android:onClick="onPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="播放"/>
+
+    </LinearLayout>
+</LinearLayout>
